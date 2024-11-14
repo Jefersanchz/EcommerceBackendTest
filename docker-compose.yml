@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ecommerce-backend:
+    build: .
+    ports:
+      - "9000:9000"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://pruebatecnica.czo20w4sih91.us-east-2.rds.amazonaws.com:3306/ecommercebd
+      SPRING_DATASOURCE_USERNAME: ppadmin
+      SPRING_DATASOURCE_PASSWORD: ppaflytest*
